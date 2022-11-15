@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tareas_wrap">
+            <div class="fecha">
+                <div class="fechaIzquierda">
+                    <div id="dateNumber">21
+                    </div>
+                    <div id="dateMonth">Mes
+                    </div>
+                    <div id="dateYear">2019
+                    </div>
+                </div>
+                <div class="dateText">Sabado</div>
+            </div> 
+                <!-- Acá el usuario va a ingresar el nombre de la tarea. variable que lo guarde y sea parte de la función AgregarTarea-->
+                <div id="accion" >
+                    <form onsubmit="addTarea(event)">
+                        <input class="tarea_name" type="text" name="tareaTexto" autocomplete="off" placeholder="Nueva tarea">
+                        <button type="submit" class="botonAdd" >+</button>
+                        <button type="button" class="botonOrdenar" onclick="mostrarTareasOrdenadas()">Priorizar</button>
+                        </form> 
+                    </div>
+            <div class="contenedorTareas">
+                <div class="tarea"> Estudiar
+                    <div class="borrar">X</div>
+                </div>
+                <div class="tarea"> Entrenar
+                    <div class="borrar">X</div>
+                </div>
+                <div class="tarea"> Guía 6 Análisi
+                    <div class="borrar">X</div>
+                </div>
+                <div class="tarea"> Mandarle Mail a Patricia Secretaría Académica
+                    <div class="borrar">X</div>
+                </div>
+                <div class="tarea"> Leer Filosofía
+                    <div class="borrar">X</div>
+                </div>
+                <div class="tarea done"> Entender Derivadas
+                    <div class="borrar">X</div>
+                </div>
+                <div class="tarea">
+                    <div class="borrar">X</div>
+                </div>
+                <div class="tarea">
+                    <div class="borrar">X</div>
+                </div>
+                <div class="tarea">
+                    <div class="borrar">X</div>
+                </div>
+                <div class="tarea">
+                    <div class="borrar">X</div>
+                </div>
+                <div class="tarea">
+                    <div class="borrar">X</div>
+                </div>
+            </div>
+    </div>
+    <div class="tareas_wrap" id="calendario">
+        Hola, Soy el calendario
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
